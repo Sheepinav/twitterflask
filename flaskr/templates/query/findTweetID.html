@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block header %}
+  <h1>{% block title %}Find Tweet ID{% endblock %}</h1>
+{% endblock %}
+
+{% block content %}
+  <form method="post">
+    <label for="userID">Username</label>
+    <input name="userID" id="userID" required>
+    <input type="submit" value="Visualize!">
+  </form>
+{% endblock %}
